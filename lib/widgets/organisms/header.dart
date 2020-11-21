@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../util/colors.dart' as appColors;
 import '../atoms/input.dart';
-import '../atoms/h2.dart';
+import '../atoms/text_h2.dart';
 
 class AppHeader extends StatelessWidget {
   final title;

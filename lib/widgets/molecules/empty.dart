@@ -1,6 +1,6 @@
 import 'package:automic_design/util/colors.dart';
 import 'package:flutter/material.dart';
-import '../atoms/h3.dart';
+import '../atoms/text_h3.dart';
 
 class AppEmptyState extends StatelessWidget {
   final text;
