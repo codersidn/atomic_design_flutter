@@ -15,6 +15,13 @@ class AppHeader extends StatelessWidget {
       title: new AppH2Text(
         text: this.title,
       ),
+      flexibleSpace: FlexibleSpaceBar(
+        background: Image.asset(
+          "assets/images/city.jpg",
+          fit: BoxFit.cover,
+        ),
+      ),
+      backgroundColor: appColors.kPrimary,
       pinned: true,
       expandedHeight: size.height * 0.18,
       bottom: new PreferredSize(
@@ -27,7 +34,7 @@ class AppHeader extends StatelessWidget {
       actions: <Widget>[
         IconButton(
           icon: new Icon(Icons.settings),
-          color: appColors.grey,
+          color: appColors.kGrey,
           tooltip: 'Add new entry',
           onPressed: () {},
         ),

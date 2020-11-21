@@ -13,13 +13,12 @@ class AppEmptyState extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Container(
-            // padding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 70.0),
             width: 150.0,
             height: 150.0,
             child: new Icon(
               Icons.sentiment_very_dissatisfied,
               size: 100.0,
-              color: textColor,
+              color: kTextColor,
             ),
           ),
           Padding(
@@ -34,26 +33,4 @@ class AppEmptyState extends StatelessWidget {
           ),
         ],
       ));
-}
-
-class BuildListWidget extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return SliverList(
-      delegate: SliverChildListDelegate(_buildList(50)),
-    );
-  }
-
-  List _buildList(int count) {
-    List<Widget> listItems = List();
-
-    for (int i = 0; i < count; i++) {
-      listItems.add(new Padding(
-          padding: new EdgeInsets.all(20.0),
-          child: new Text('Item ${i.toString()}',
-              style: new TextStyle(fontSize: 25.0))));
-    }
-
-    return listItems;
-  }
 }
